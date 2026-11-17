@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>عيادة الابتسامة لطب الأسنان</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <div class="logo">🦷 عيادة الابتسامة</div>
+      <div class="links" id="links">
+        <a href="#services">خدماتنا</a>
+        <a href="#why">لماذا نحن</a>
+        <a href="#booking">احجز موعد</a>
+        <a href="#contact">تواصل معنا</a>
+      </div>
+      <div class="actions">
+        <button id="themeBtn" class="icon-btn" aria-label="تبديل الوضع">🌓</button>
+        <button id="menuBtn" class="icon-btn menu-btn" aria-label="القائمة">☰</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <span class="badge">رعاية لطيفة · تقنيات حديثة</span>
+      <h1>ابتسامتك <span>تستحق</span> الأفضل</h1>
+      <p>نقدّم خدمات طب الأسنان لجميع أفراد العائلة في بيئة معقّمة ومريحة، مع خطة علاج واضحة لكل مراجع.</p>
+      <a class="btn" href="#booking">احجز موعدك</a>
+      <a class="btn outline" href="#services">تعرّف على خدماتنا</a>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <h2>خدماتنا</h2>
+      <p class="sub">علاجات شاملة تحافظ على صحة أسنانك وجمالها</p>
+      <div class="grid" id="servicesGrid"></div>
+    </div>
+  </section>
+
+  <section id="why" class="alt">
+    <div class="wrap">
+      <h2>لماذا عيادتنا؟</h2>
+      <p class="sub">راحتك وسلامتك أولًا</p>
+      <div class="grid">
+        <div class="card reveal"><div class="ic">🧼</div><h3>تعقيم صارم</h3><p>أدوات معقّمة وبيئة نظيفة لكل مراجع.</p></div>
+        <div class="card reveal"><div class="ic">😌</div><h3>علاج بلا ألم</h3><p>نحرص على راحتك خلال كل خطوة من العلاج.</p></div>
+        <div class="card reveal"><div class="ic">📋</div><h3>خطة علاج واضحة</h3><p>نشرح لك التشخيص والخيارات قبل البدء.</p></div>
+        <div class="card reveal"><div class="ic">👶</div><h3>مناسبة للعائلة</h3><p>رعاية للكبار والأطفال بأسلوب ودود.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="booking">
+    <div class="wrap">
+      <h2>احجز موعدًا</h2>
+      <p class="sub">اترك بياناتك وسنؤكد الموعد معك</p>
+      <form id="bookForm" class="card form" novalidate>
+        <label>الاسم الكامل
+          <input type="text" id="name" placeholder="مثال: أحمد محمد">
+          <span class="err" id="nameErr"></span>
+        </label>
+        <label>رقم الهاتف
+          <input type="tel" id="phone" placeholder="05xxxxxxxx" inputmode="tel">
+          <span class="err" id="phoneErr"></span>
+        </label>
+        <label>نوع الخدمة
+          <select id="service"></select>
+        </label>
+        <label>التاريخ المفضل
+          <input type="date" id="date">
+          <span class="err" id="dateErr"></span>
+        </label>
+        <button type="submit" class="btn">إرسال طلب الحجز</button>
+        <p class="ok" id="okMsg" hidden></p>
+      </form>
+    </div>
+  </section>
+
+  <section id="contact" class="alt">
+    <div class="wrap contact">
+      <h2>تواصل معنا</h2>
+      <p class="sub">يسعدنا خدمتك</p>
+      <div class="card" style="max-width:480px;margin:auto">
+        <p>📍 العنوان: [أضف عنوان العيادة]</p>
+        <p>📞 الهاتف: [أضف رقم الهاتف]</p>
+        <p>🕘 الدوام: السبت – الخميس، ٩ صباحًا – ٦ مساءً</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="year"></span> عيادة الابتسامة لطب الأسنان — جميع الحقوق محفوظة</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
